@@ -1,0 +1,221 @@
+<div class="table">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <img src="'../../assets/bulb.png" class="bulb-img" alt="bulb icon" />
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button"
+                role="tab" aria-controls="news" aria-selected="true">Notes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="questions-tab" data-bs-toggle="tab" data-bs-target="#questions" type="button"
+                role="tab" aria-controls="questions" aria-selected="true">Questions</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <div class="nav-link disabled" tabindex="-1" aria-disabled="true">Hello, {{username}}</div>
+        </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="container">
+            <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
+                <div class="row mx-sm-5">
+                    <div class="col-sm-8 col-md-10 ps-0 pe-3 py-3">
+                        <div class="form-group has-search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" class="form-control search-input" placeholder="Django">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-2 px-0 py-3">
+                        <button type="button" class="btn btn-dark float-end">Search</button>
+                    </div>
+                </div>
+                <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col-12 px-0 py-3">
+                        <ngb-carousel>
+                            <ng-template ngbSlide>
+                                <div class="card-deck">
+                                    <div class="row mx-5">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <img class="card-img-top" src="/../assets/image1.png"
+                                                    alt="Card image 1">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">SUBTITLE</h5>
+                                                    <p class="card-text">Django cautions</p>
+                                                    <p class="card-text">A brief description of the Django frameworks
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button type="button"
+                                                                class="btn btn-dark float-end">Details</button>
+                                                        </div>
+                                                        <div class="col-6"><span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="size-16 ps-3">4.8</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <img class="card-img-top" src="/../assets/image2.png"
+                                                    alt="Card image 2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">SUBTITLE</h5>
+                                                    <p class="card-text">Introduction to Django</p>
+                                                    <p class="card-text">Overview of the history of Django has
+                                                        advantages
+                                                        and
+                                                        disadvantages, etc.</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button type="button"
+                                                                class="btn btn-dark float-end">Details</button>
+                                                        </div>
+                                                        <div class="col-6"><span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="size-16 ps-3">3.9</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <img class="card-img-top" src="/../assets/image3.png"
+                                                    alt="Card image 3">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">SUBTITLE</h5>
+                                                    <p class="card-text">Django's manual</p>
+                                                    <p class="card-text">Some basic teaching of Django</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button type="button"
+                                                                class="btn btn-dark float-end">Details</button>
+                                                        </div>
+                                                        <div class="col-6"><span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="size-16 ps-3">3.2</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <div class="card-deck">
+                                    <div class="row mx-5">
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <img class="card-img-top" src="/../assets/image1.png"
+                                                    alt="Card image 1">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">SUBTITLE</h5>
+                                                    <p class="card-text">Django cautions</p>
+                                                    <p class="card-text">A brief description of the Django frameworks
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button type="button"
+                                                                class="btn btn-dark float-end">Details</button>
+                                                        </div>
+                                                        <div class="col-6"><span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="size-16 ps-3">4.3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <img class="card-img-top" src="/../assets/image2.png"
+                                                    alt="Card image 2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">SUBTITLE</h5>
+                                                    <p class="card-text">Introduction to Django</p>
+                                                    <p class="card-text">Overview of the history of Django has
+                                                        advantages
+                                                        and
+                                                        disadvantages, etc.</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button type="button"
+                                                                class="btn btn-dark float-end">Details</button>
+                                                        </div>
+                                                        <div class="col-6"><span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="size-16 ps-3">2.3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="card">
+                                                <img class="card-img-top" src="/../assets/image3.png"
+                                                    alt="Card image 3">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">SUBTITLE</h5>
+                                                    <p class="card-text">Django's manual</p>
+                                                    <p class="card-text">Some basic teaching of Django</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button type="button"
+                                                                class="btn btn-dark float-end">Details</button>
+                                                        </div>
+                                                        <div class="col-6"><span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="size-16 ps-3">5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">third contente fdkjf
+            ldfgh...</div>
+    </div>
+</div>
