@@ -30,16 +30,16 @@ This repository contains a application where users can share and view courses th
 1. Clone the repository:
 
 ```
-git clone <repository-url>
+git clone https://github.com/risakatelynt/CourseHub.git
 ```
 
-2. Install the required dependencies:
+2. Install the required dependencies in frontend:
 
 ```
 npm install   # Install Angular and Node.js dependencies
 ```
 
-3. Setup and activate a virtual environment:
+3. Setup and activate a virtual environment in backend:
 
 ```
 python3 -m venv env
@@ -63,6 +63,7 @@ python manage.py migrate
 
 ```
 python manage.py runserver
+npm start
 ```
 
 7. Access the application in your browser:
